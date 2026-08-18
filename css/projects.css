@@ -4,22 +4,14 @@
 
 .projects {
     position: relative;
-
     z-index: 1;
-
     width: 100%;
-
     max-width: 100%;
-
     margin: 0;
-
     padding: 75px 6%;
-
     color: #ffffff;
-
     overflow: hidden;
 }
-
 
 /* ========================================= */
 /* ================ HEADING ================ */
@@ -27,57 +19,36 @@
 
 .projects-heading {
     width: 100%;
-
     max-width: 750px;
-
     margin: 0 auto 80px;
-
     text-align: center;
 }
 
-
 .section-label {
     margin: 0 0 15px;
-
     font-family: "Lobster", cursive;
-
     font-size: 24px;
-
     font-weight: 400;
-
     color: #E8C9D6;
 }
 
-
 .projects-heading h2 {
     margin: 0;
-
     font-family: "Times New Roman", serif;
-
     font-size: clamp(38px, 5vw, 64px);
-
     font-weight: 400;
-
     line-height: 1.1;
-
     color: #ffffff;
 }
 
-
 .projects-intro {
     max-width: 560px;
-
     margin: 25px auto 0;
-
     font-family: "Times New Roman", serif;
-
     font-size: 18px;
-
     line-height: 1.6;
-
     color: rgba(255, 255, 255, 0.7);
 }
-
 
 /* ========================================= */
 /* =============== PROJECT GRID ============ */
@@ -85,18 +56,12 @@
 
 .projects-grid {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, minmax(0, 1fr));
-
     gap: 28px;
 }
-
 
 /* ========================================= */
 /* =============== PROJECT CARD ============ */
@@ -104,34 +69,21 @@
 
 .project-card {
     min-width: 0;
-
     background: rgba(18, 15, 16, 0.82);
-
     border: 1px solid rgba(232, 201, 214, 0.12);
-
     border-radius: 18px;
-
     overflow: hidden;
-
     transition:
         transform 0.4s ease,
         border-color 0.4s ease,
         box-shadow 0.4s ease;
 }
 
-
-/* ========================================= */
-/* ================ HOVER ================== */
-/* ========================================= */
-
 .project-card:hover {
     transform: translateY(-8px);
-
     border-color: rgba(232, 201, 214, 0.3);
-
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
-
 
 /* ========================================= */
 /* ============ CLICKABLE PREVIEW ========== */
@@ -139,18 +91,12 @@
 
 .project-preview {
     display: block;
-
     width: 100%;
-
     aspect-ratio: 16 / 10;
-
     overflow: hidden;
-
     text-decoration: none;
-
     background-color: rgba(104, 40, 71, 0.3);
 }
-
 
 /* ========================================= */
 /* ================ VIDEO ================== */
@@ -158,14 +104,10 @@
 
 .project-preview video {
     width: 100%;
-
     height: 100%;
-
     display: block;
-
     object-fit: cover;
 }
-
 
 /* ========================================= */
 /* =========== IMAGE PLACEHOLDER =========== */
@@ -173,21 +115,13 @@
 
 .image-placeholder {
     width: 100%;
-
     height: 100%;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     font-family: "Lobster", cursive;
-
     font-size: 28px;
-
     color: rgba(232, 201, 214, 0.55);
-
     background:
         linear-gradient(
             135deg,
@@ -195,7 +129,6 @@
             rgba(18, 15, 16, 0.9)
         );
 }
-
 
 /* ========================================= */
 /* ============== PROJECT INFO ============= */
@@ -205,19 +138,33 @@
     padding: 25px 28px 30px;
 }
 
-
 .project-info h3 {
     margin: 0 0 10px;
-
     font-family: "Lobster", cursive;
-
     font-size: 30px;
-
     font-weight: 400;
-
     line-height: 1.2;
-
     color: #ffffff;
+}
+
+/* ========================================= */
+/* ============== TECHNOLOGIES ============= */
+/* ========================================= */
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.technologies span {
+    padding: 6px 12px;
+    border-radius: 50px;
+    border: 1px solid rgba(232, 201, 214, 0.18);
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* ========================================= */
@@ -226,30 +173,18 @@
 
 .project-status {
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
     margin-top: 20px;
-
     padding: 6px 12px;
-
     border-radius: 50px;
-
     border: 1px solid rgba(232, 201, 214, 0.18);
-
     background-color: rgba(255, 255, 255, 0.03);
-
     font-family: "Times New Roman", serif;
-
     font-size: 14px;
-
     line-height: 1;
-
     color: rgba(255, 255, 255, 0.75);
 }
-
 
 /* ========================================= */
 /* ================ STATUS DOT ============= */
@@ -257,16 +192,11 @@
 
 .status-dot {
     width: 7px;
-
     height: 7px;
-
     flex-shrink: 0;
-
     border-radius: 50%;
-
     display: inline-block;
 }
-
 
 .status-dot.live {
     background-color: #6FCF97;
@@ -278,73 +208,192 @@
     box-shadow: 0 0 8px rgba(104, 40, 71, 0.6);
 }
 
-
 .status-dot.development {
     background-color: #F2C94C;
     box-shadow: 0 0 8px rgba(242, 201, 76, 0.5);
 }
 
-
-/* ========================================= */
-/* =============== RESPONSIVE ============== */
-/* ========================================= */
-
-@media (max-width: 1000px) {
-
-    .projects-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-}
-
-
 /* ========================================= */
 /* =============== TABLET ================== */
 /* ========================================= */
 
-@media (max-width: 750px) {
-
+@media (max-width: 1000px) {
     .projects {
-        padding: 45px 5% 130px;
+        padding: 65px 5%;
     }
 
     .projects-heading {
-        margin-bottom: 55px;
+        margin-bottom: 65px;
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
-
-        max-width: 600px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
     }
 
-}
+    .project-info {
+        padding: 23px 25px 28px;
+    }
 
+    .project-info h3 {
+        font-size: 28px;
+    }
+}
 
 /* ========================================= */
 /* =============== MOBILE ================== */
 /* ========================================= */
 
-@media (max-width: 480px) {
-
+@media (max-width: 750px) {
     .projects {
-        padding: 40px 5% 110px;
+        padding: 50px 5% 120px;
+    }
+
+    .projects-heading {
+        max-width: 650px;
+        margin-bottom: 50px;
+    }
+
+    .section-label {
+        font-size: 23px;
+        margin-bottom: 12px;
     }
 
     .projects-heading h2 {
-        font-size: 40px;
+        font-size: clamp(36px, 8vw, 48px);
     }
 
     .projects-intro {
+        margin-top: 20px;
         font-size: 17px;
+        line-height: 1.55;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        gap: 24px;
     }
 
     .project-info {
-        padding: 22px 23px 26px;
+        padding: 22px 24px 27px;
     }
 
     .project-info h3 {
-        font-size: 27px;
+        font-size: 28px;
     }
 
+    .technologies {
+        margin-top: 20px;
+    }
+
+    .project-status {
+        margin-top: 17px;
+    }
+}
+
+/* ========================================= */
+/* ============ SMALL MOBILE ============== */
+/* ========================================= */
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 45px 5% 105px;
+    }
+
+    .projects-heading {
+        margin-bottom: 42px;
+    }
+
+    .section-label {
+        font-size: 21px;
+    }
+
+    .projects-heading h2 {
+        font-size: 38px;
+    }
+
+    .projects-intro {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .project-card {
+        border-radius: 16px;
+    }
+
+    .project-preview {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-info {
+        padding: 20px 21px 24px;
+    }
+
+    .project-info h3 {
+        font-size: 26px;
+    }
+
+    .technologies {
+        gap: 7px;
+        margin-top: 18px;
+    }
+
+    .technologies span {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .project-status {
+        margin-top: 15px;
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+/* ========================================= */
+/* =========== VERY SMALL MOBILE ========== */
+/* ========================================= */
+
+@media (max-width: 380px) {
+    .projects {
+        padding: 40px 4% 95px;
+    }
+
+    .projects-heading {
+        margin-bottom: 36px;
+    }
+
+    .section-label {
+        font-size: 20px;
+    }
+
+    .projects-heading h2 {
+        font-size: 34px;
+    }
+
+    .projects-intro {
+        font-size: 15px;
+    }
+
+    .projects-grid {
+        gap: 20px;
+    }
+
+    .project-info {
+        padding: 18px 18px 22px;
+    }
+
+    .project-info h3 {
+        font-size: 24px;
+    }
+
+    .technologies span {
+        padding: 5px 9px;
+        font-size: 12px;
+    }
+
+    .project-status {
+        font-size: 12px;
+    }
 }
