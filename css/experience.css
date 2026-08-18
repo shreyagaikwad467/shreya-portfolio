@@ -1,0 +1,295 @@
+/* ========================================= */
+/* ========== EXPERIENCE SECTION =========== */
+/* ========================================= */
+
+.experience {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 60px 6% 80px;
+    color: #ffffff;
+    background: rgba(18, 15, 16, 0.82);
+    border: 1px solid rgba(232, 201, 214, 0.12);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================= */
+/* ================ HEADING ================ */
+/* ========================================= */
+
+.experience-heading {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.experience-heading .section-label {
+    margin: 0 0 15px;
+    font-family: "Lobster", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #E8C9D6;
+}
+
+.experience-heading h2 {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+/* ========================================= */
+/* ================ LIST =================== */
+/* ========================================= */
+
+.experience-list {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ========================================= */
+/* ================ ITEM =================== */
+/* ========================================= */
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(232, 201, 214, 0.15);
+    transition: padding-left 0.35s ease, border-color 0.35s ease;
+}
+
+.experience-item:last-child {
+    border-bottom: 1px solid rgba(232, 201, 214, 0.15);
+}
+
+.experience-item:hover {
+    padding-left: 10px;
+    border-color: rgba(232, 201, 214, 0.3);
+}
+
+/* ========================================= */
+/* =============== NUMBER ================= */
+/* ========================================= */
+
+.experience-number {
+    padding-top: 4px;
+    font-family: "Lobster", cursive;
+    font-size: 18px;
+    color: rgba(232, 201, 214, 0.5);
+    transition: color 0.3s ease;
+}
+
+.experience-item:hover .experience-number {
+    color: #E8C9D6;
+}
+
+/* ========================================= */
+/* =============== MAIN ==================== */
+/* ========================================= */
+
+.experience-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* ========================================= */
+/* ================ TITLE ================== */
+/* ========================================= */
+
+.experience-main h3 {
+    margin: 0 0 6px;
+    font-family: "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* ========================================= */
+/* =============== COMPANY ================= */
+/* ========================================= */
+
+.company {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========================================= */
+/* ================ META =================== */
+/* ========================================= */
+
+.experience-meta {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.experience-year {
+    font-family: "Times New Roman", serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ========================================= */
+/* ============== CURRENT ================== */
+/* ========================================= */
+
+.current-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+    color: #E8C9D6;
+}
+
+.current-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #E8C9D6;
+    box-shadow: 0 0 8px rgba(232, 201, 214, 0.7);
+    animation: experience-pulse 2s ease-in-out infinite;
+}
+
+@keyframes experience-pulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(0.85);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+/* ========================================= */
+/* ============ DESCRIPTION ================ */
+/* ========================================= */
+
+.experience-description {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 650px;
+    margin-top: 18px;
+    opacity: 0;
+    transform: translateY(-5px);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.experience-item:hover .experience-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================= */
+/* ============ DESCRIPTION LINE =========== */
+/* ========================================= */
+
+.description-line {
+    width: 35px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #E8C9D6;
+}
+
+/* ========================================= */
+/* ================ TEXT =================== */
+/* ========================================= */
+
+.experience-description p {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ========================================= */
+/* =============== TABLET ================== */
+/* ========================================= */
+
+@media (max-width: 750px) {
+    .experience {
+        padding: 45px 5% 120px;
+    }
+
+    .experience-heading {
+        margin-bottom: 55px;
+    }
+
+    .experience-item {
+        grid-template-columns: 50px 1fr;
+        gap: 20px;
+    }
+
+    .experience-main {
+        gap: 20px;
+    }
+}
+
+/* ========================================= */
+/* ================ MOBILE ================= */
+/* ========================================= */
+
+@media (max-width: 600px) {
+    .experience {
+        width: 92%;
+        margin: 35px auto;
+        padding: 45px 6% 60px;
+        border-radius: 20px;
+    }
+
+    .experience-heading {
+        margin-bottom: 45px;
+    }
+
+    .experience-item {
+        grid-template-columns: 35px 1fr;
+        gap: 15px;
+        padding: 25px 0;
+    }
+
+    .experience-main {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .experience-main h3 {
+        font-size: 21px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .experience-meta {
+        gap: 15px;
+    }
+
+    .experience-description {
+        opacity: 1;
+        transform: none;
+        margin-top: 15px;
+    }
+
+    .experience-number {
+        font-size: 16px;
+    }
+}

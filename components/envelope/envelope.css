@@ -1,0 +1,330 @@
+/*=========================================
+        ENVELOPE CONTAINER
+=========================================*/
+
+#envelopeContainer{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    z-index:9999;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(80px);
+
+    transition:.5s ease;
+}
+
+#envelopeContainer.show{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+}
+
+
+/*=========================================
+            ENVELOPE
+=========================================*/
+
+#envelope{
+
+    width:150px;
+    height:95px;
+
+    background:linear-gradient(135deg,#FBCFE8,#EC4899);
+
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 18px 35px rgba(236,72,153,.28);
+
+    animation:floatEnvelope 3.5s ease-in-out infinite;
+
+    transition:.3s;
+
+}
+
+#envelope:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 22px 45px rgba(236,72,153,.38);
+
+}
+
+
+/*=========================================
+            ICON
+=========================================*/
+
+.envelope-icon{
+
+    font-size:42px;
+
+    margin-bottom:8px;
+
+}
+
+
+/*=========================================
+            TEXT
+=========================================*/
+
+.envelope-text{
+
+    color:white;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+
+/*=========================================
+            FLOAT
+=========================================*/
+
+@keyframes floatEnvelope{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+
+/*=========================================
+            LETTER MODAL
+=========================================*/
+
+#letterModal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:10000;
+
+}
+
+#letterModal.show{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+
+/*=========================================
+            LETTER CARD
+=========================================*/
+
+.letter-card{
+
+    width:min(650px,90vw);
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    position:relative;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(236,72,153,.22);
+
+    animation:letterOpen .35s ease;
+
+}
+
+@keyframes letterOpen{
+
+    from{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/*=========================================
+            ICON
+=========================================*/
+
+.letter-icon{
+
+    font-size:48px;
+
+    margin-bottom:25px;
+
+}
+
+
+/*=========================================
+            HEADING
+=========================================*/
+
+.letter-card h2{
+
+    color:#DB2777;
+
+    margin-bottom:25px;
+
+}
+
+
+/*=========================================
+            PARAGRAPH
+=========================================*/
+
+.letter-card p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+
+/*=========================================
+            FOOTER
+=========================================*/
+
+.letter-card h3{
+
+    margin-top:28px;
+
+    color:#888;
+
+    font-weight:500;
+
+}
+
+.letter-card h4{
+
+    color:#DB2777;
+
+    margin-top:10px;
+
+    font-size:24px;
+
+}
+
+
+/*=========================================
+            CLOSE BUTTON
+=========================================*/
+
+#closeLetter{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    border:none;
+
+    background:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+#closeLetter:hover{
+
+    color:#DB2777;
+
+}
+
+
+/*=========================================
+            MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+    #envelopeContainer{
+
+        right:20px;
+        bottom:20px;
+
+    }
+
+    #envelope{
+
+        width:130px;
+        height:85px;
+
+    }
+
+    .letter-card{
+
+        padding:30px 22px;
+
+    }
+
+    .letter-card p{
+
+        font-size:16px;
+
+    }
+
+}

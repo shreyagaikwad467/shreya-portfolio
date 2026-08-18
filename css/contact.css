@@ -1,0 +1,295 @@
+/* ========================================= */
+/* ============== CONTACT SECTION ========== */
+/* ========================================= */
+
+.contact {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 60px 6% 70px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: rgba(18, 15, 16, 0.82);
+    border: 1px solid rgba(232, 201, 214, 0.12);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+/* ========================================= */
+/* ============ CONTACT INFO =============== */
+/* ========================================= */
+
+.contact-info {
+    grid-column: 1;
+    align-self: center;
+    max-width: 450px;
+}
+
+/* ========================================= */
+/* ============ SECTION LABEL ============== */
+/* ========================================= */
+
+.contact-info .section-label {
+    margin: 0 0 8px;
+    font-family: "Lobster", cursive;
+    font-size: 28px;
+    font-weight: 400;
+    color: #E8C9D6;
+}
+
+/* ========================================= */
+/* ================ HEADING ================ */
+/* ========================================= */
+
+.contact-info h2 {
+    margin: 0 0 18px;
+    font-family: "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+/* ========================================= */
+/* ============== INTRO TEXT =============== */
+/* ========================================= */
+
+.contact-info .contact-intro {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ========================================= */
+/* ================ FORM =================== */
+/* ========================================= */
+
+.contact-form {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* ========================================= */
+/* ============== FORM GROUP =============== */
+/* ========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* ========================================= */
+/* ================ LABEL ================== */
+/* ========================================= */
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #E8C9D6;
+}
+
+/* ========================================= */
+/* ============== INPUT / TEXTAREA ========= */
+/* ========================================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(232, 201, 214, 0.15);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* ========================================= */
+/* ================ FOCUS ================== */
+/* ========================================= */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgba(232, 201, 214, 0.5);
+    background: rgba(232, 201, 214, 0.04);
+}
+
+/* ========================================= */
+/* ============== PLACEHOLDER ============== */
+/* ========================================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* ========================================= */
+/* ============== TEXTAREA ================= */
+/* ========================================= */
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* ========================================= */
+/* ================ BUTTON ================= */
+/* ========================================= */
+
+.contact-form button {
+    display: block;
+    margin: 10px 0 0;
+    padding: 12px 28px;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #ffffff;
+    background: #682847;
+    border: 1px solid rgba(232, 201, 214, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* ========================================= */
+/* ================ HOVER ================== */
+/* ========================================= */
+
+.contact-form button:hover {
+    background: #7a3154;
+    transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* ========== CONTACT SUCCESS ============== */
+/* ========================================= */
+
+.contact-success {
+    display: none;
+    grid-column: 2;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ========================================= */
+/* ============ SUCCESS TITLE ============== */
+/* ========================================= */
+
+.success-title {
+    margin: 0 0 15px;
+    font-family: "Lobster", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #E8C9D6;
+}
+
+/* ========================================= */
+/* ============= SUCCESS TEXT ============= */
+/* ========================================= */
+
+.success-text {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ========================================= */
+/* ================ TABLET ================= */
+/* ========================================= */
+
+@media (max-width: 850px) {
+    .contact {
+        gap: 50px;
+        padding: 50px 6% 60px;
+    }
+}
+
+/* ========================================= */
+/* ================ MOBILE ================= */
+/* ========================================= */
+
+@media (max-width: 700px) {
+    .contact {
+        width: 92%;
+        margin: 35px auto;
+        padding: 45px 6% 55px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .contact > .section-label {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .contact > h2 {
+        text-align: center;
+        font-size: 42px;
+    }
+
+    .contact-intro {
+        max-width: 100%;
+        margin: 20px 0 35px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .contact-success {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .success-title {
+        font-size: 28px;
+    }
+
+    .success-text {
+        font-size: 17px;
+    }
+}
+
+/* ========================================= */
+/* ============ SMALL MOBILE ============== */
+/* ========================================= */
+
+@media (max-width: 450px) {
+    .success-title {
+        font-size: 25px;
+    }
+
+    .success-text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,253 @@
+/* ========================================= */
+/* ================ NAVBAR ================= */
+/* ========================================= */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    width: calc(100% - 8%);
+    margin: 20px 4% 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+    background-color: rgba(18, 15, 16, 0.88);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================= */
+/* ============ SOCIAL LINKS =============== */
+/* ========================================= */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(18px, 2.5vw, 40px);
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    font-size: clamp(20px, 1.8vw, 25px);
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #E8C9D6;
+    transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* ================ RESUME ================= */
+/* ========================================= */
+
+.resume-link {
+    position: relative;
+}
+
+.resume-link::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    width: 1px;
+    height: 20px;
+    background-color: rgba(232, 201, 214, 0.2);
+}
+
+/* ========================================= */
+/* ============== NAV LINKS ================ */
+/* ========================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(18px, 2.5vw, 40px);
+}
+
+.nav-links a {
+    position: relative;
+    font-family: "Times New Roman", serif;
+    font-size: clamp(15px, 1.4vw, 18px);
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+/* ========================================= */
+/* =============== UNDERLINE =============== */
+/* ========================================= */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background-color: #682847;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ========================================= */
+/* ================ TABLET ================= */
+/* ========================================= */
+
+@media (max-width: 900px) {
+    .navbar {
+        width: calc(100% - 6%);
+        margin: 18px 3% 0;
+        padding: 18px 5%;
+        border-radius: 17px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    .social-links a {
+        width: 25px;
+        height: 25px;
+        font-size: 21px;
+    }
+
+    .resume-link::before {
+        left: -10px;
+        height: 18px;
+    }
+
+    .nav-links {
+        gap: 22px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+/* ========================================= */
+/* =============== MOBILE ================== */
+/* ========================================= */
+
+@media (max-width: 700px) {
+    .navbar {
+        width: calc(100% - 8%);
+        margin: 15px 4% 0;
+        padding: 16px 5%;
+        border-radius: 16px;
+    }
+
+    .social-links {
+        gap: 14px;
+    }
+
+    .social-links a {
+        width: 22px;
+        height: 22px;
+        font-size: 18px;
+    }
+
+    .resume-link::before {
+        left: -7px;
+        height: 16px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+
+/* ========================================= */
+/* ============ SMALL MOBILE ============== */
+/* ========================================= */
+
+@media (max-width: 500px) {
+    .navbar {
+        width: calc(100% - 10%);
+        margin: 12px 5% 0;
+        padding: 14px 5%;
+        border-radius: 14px;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links a {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .resume-link::before {
+        left: -5px;
+        height: 14px;
+    }
+
+    .nav-links {
+        gap: 11px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links a::after {
+        bottom: -4px;
+    }
+}
+
+/* ========================================= */
+/* =========== VERY SMALL MOBILE ========== */
+/* ========================================= */
+
+@media (max-width: 380px) {
+    .navbar {
+        width: calc(100% - 8%);
+        margin: 10px 4% 0;
+        padding: 12px 4%;
+        border-radius: 13px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-links a {
+        width: 18px;
+        height: 18px;
+        font-size: 15px;
+    }
+
+    .resume-link::before {
+        left: -4px;
+        height: 13px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+}

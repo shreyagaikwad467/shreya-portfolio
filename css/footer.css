@@ -1,0 +1,65 @@
+/* ========================================= */
+/* ================= FOOTER ================ */
+/* ========================================= */
+
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 35px 20px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #120F10;
+    border-top: 1px solid rgba(232, 201, 214, 0.1);
+}
+
+/* ========================================= */
+/* ================ NAME =================== */
+/* ========================================= */
+
+.footer-name {
+    margin: 0;
+    font-family: "Lobster", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #E8C9D6;
+}
+
+/* ========================================= */
+/* ================ TEXT =================== */
+/* ========================================= */
+
+.footer-text {
+    margin: 8px 0 15px;
+    font-family: "Times New Roman", serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========================================= */
+/* ================ COPYRIGHT ============== */
+/* ========================================= */
+
+.footer-copy {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* ========================================= */
+/* ================ MOBILE ================= */
+/* ========================================= */
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 30px 15px 20px;
+    }
+
+    .footer-name {
+        font-size: 22px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
