@@ -4,14 +4,22 @@
 
 .projects {
     position: relative;
+
     z-index: 1;
+
     width: 100%;
+
     max-width: 100%;
+
     margin: 0;
+
     padding: 75px 6%;
+
     color: #ffffff;
+
     overflow: hidden;
 }
+
 
 /* ========================================= */
 /* ================ HEADING ================ */
@@ -19,36 +27,57 @@
 
 .projects-heading {
     width: 100%;
+
     max-width: 750px;
+
     margin: 0 auto 80px;
+
     text-align: center;
 }
 
+
 .section-label {
     margin: 0 0 15px;
+
     font-family: "Lobster", cursive;
+
     font-size: 24px;
+
     font-weight: 400;
+
     color: #E8C9D6;
 }
 
+
 .projects-heading h2 {
     margin: 0;
+
     font-family: "Times New Roman", serif;
+
     font-size: clamp(38px, 5vw, 64px);
+
     font-weight: 400;
+
     line-height: 1.1;
+
     color: #ffffff;
 }
 
+
 .projects-intro {
     max-width: 560px;
+
     margin: 25px auto 0;
+
     font-family: "Times New Roman", serif;
+
     font-size: 18px;
+
     line-height: 1.6;
+
     color: rgba(255, 255, 255, 0.7);
 }
+
 
 /* ========================================= */
 /* =============== PROJECT GRID ============ */
@@ -56,12 +85,18 @@
 
 .projects-grid {
     width: 100%;
+
     max-width: 1400px;
+
     margin: 0 auto;
+
     display: grid;
+
     grid-template-columns: repeat(3, minmax(0, 1fr));
+
     gap: 28px;
 }
+
 
 /* ========================================= */
 /* =============== PROJECT CARD ============ */
@@ -69,21 +104,34 @@
 
 .project-card {
     min-width: 0;
+
     background: rgba(18, 15, 16, 0.82);
+
     border: 1px solid rgba(232, 201, 214, 0.12);
+
     border-radius: 18px;
+
     overflow: hidden;
+
     transition:
         transform 0.4s ease,
         border-color 0.4s ease,
         box-shadow 0.4s ease;
 }
 
+
+/* ========================================= */
+/* ================ HOVER ================== */
+/* ========================================= */
+
 .project-card:hover {
     transform: translateY(-8px);
+
     border-color: rgba(232, 201, 214, 0.3);
+
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
+
 
 /* ========================================= */
 /* ============ CLICKABLE PREVIEW ========== */
@@ -91,24 +139,33 @@
 
 .project-preview {
     display: block;
+
     width: 100%;
+
     aspect-ratio: 16 / 10;
+
     overflow: hidden;
+
     text-decoration: none;
+
     background-color: rgba(104, 40, 71, 0.3);
 }
 
-.project-preview img {
+
+/* ========================================= */
+/* ================ VIDEO ================== */
+/* ========================================= */
+
+.project-preview video {
     width: 100%;
+
     height: 100%;
+
     display: block;
+
     object-fit: cover;
-    transition: transform 0.5s ease;
 }
 
-.project-card:hover .project-preview img {
-    transform: scale(1.04);
-}
 
 /* ========================================= */
 /* =========== IMAGE PLACEHOLDER =========== */
@@ -116,13 +173,21 @@
 
 .image-placeholder {
     width: 100%;
+
     height: 100%;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     font-family: "Lobster", cursive;
+
     font-size: 28px;
+
     color: rgba(232, 201, 214, 0.55);
+
     background:
         linear-gradient(
             135deg,
@@ -130,6 +195,7 @@
             rgba(18, 15, 16, 0.9)
         );
 }
+
 
 /* ========================================= */
 /* ============== PROJECT INFO ============= */
@@ -139,33 +205,19 @@
     padding: 25px 28px 30px;
 }
 
+
 .project-info h3 {
     margin: 0 0 10px;
+
     font-family: "Lobster", cursive;
+
     font-size: 30px;
+
     font-weight: 400;
+
     line-height: 1.2;
+
     color: #ffffff;
-}
-
-/* ========================================= */
-/* ============== TECHNOLOGIES ============= */
-/* ========================================= */
-
-.technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 25px;
-}
-
-.technologies span {
-    padding: 6px 12px;
-    border-radius: 50px;
-    border: 1px solid rgba(232, 201, 214, 0.18);
-    font-family: "Times New Roman", serif;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.75);
 }
 
 /* ========================================= */
@@ -174,18 +226,30 @@
 
 .project-status {
     display: inline-flex;
+
     align-items: center;
+
     gap: 8px;
+
     margin-top: 20px;
+
     padding: 6px 12px;
+
     border-radius: 50px;
+
     border: 1px solid rgba(232, 201, 214, 0.18);
+
     background-color: rgba(255, 255, 255, 0.03);
+
     font-family: "Times New Roman", serif;
+
     font-size: 14px;
+
     line-height: 1;
+
     color: rgba(255, 255, 255, 0.75);
 }
+
 
 /* ========================================= */
 /* ================ STATUS DOT ============= */
@@ -193,37 +257,53 @@
 
 .status-dot {
     width: 7px;
+
     height: 7px;
+
     flex-shrink: 0;
+
     border-radius: 50%;
+
     display: inline-block;
 }
+
 
 .status-dot.live {
     background-color: #6FCF97;
     box-shadow: 0 0 8px rgba(111, 207, 151, 0.6);
 }
 
+.status-dot.completed {
+    background-color: #682847;
+    box-shadow: 0 0 8px rgba(104, 40, 71, 0.6);
+}
+
+
 .status-dot.development {
     background-color: #F2C94C;
     box-shadow: 0 0 8px rgba(242, 201, 76, 0.5);
 }
+
 
 /* ========================================= */
 /* =============== RESPONSIVE ============== */
 /* ========================================= */
 
 @media (max-width: 1000px) {
+
     .projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
 }
+
 
 /* ========================================= */
 /* =============== TABLET ================== */
 /* ========================================= */
 
 @media (max-width: 750px) {
+
     .projects {
         padding: 45px 5% 130px;
     }
@@ -234,15 +314,19 @@
 
     .projects-grid {
         grid-template-columns: 1fr;
+
         max-width: 600px;
     }
+
 }
+
 
 /* ========================================= */
 /* =============== MOBILE ================== */
 /* ========================================= */
 
 @media (max-width: 480px) {
+
     .projects {
         padding: 40px 5% 110px;
     }
@@ -262,4 +346,5 @@
     .project-info h3 {
         font-size: 27px;
     }
+
 }
